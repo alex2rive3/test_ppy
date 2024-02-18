@@ -1,13 +1,17 @@
 # Proyecto de Pruebas Automatizadas en Python
 
 Este proyecto está diseñado para ejecutar pruebas automatizadas en múltiples archivos utilizando Jest para pruebas en JavaScript y un script en Python para la automatización del proceso.
+## Indicaciones
+Para el correcto funcionamiento del los scripts los alumnos deben completar los enunciados dentro de las funciones que se encuntran en el _template.js_ de modo a que los test se puedan ejecutar correctamente, es muy importante tambien que se tenga muy presente que todo lo que se encuentra escrito entre los simbolos __*" "__ son obligatorios
 
-## Requisitos
+**Tambien es de suma importancia que los alumnos entreguen sus archivos con sus nombres para un correcto seguimiento, ya que de otro modo se va a dificultar muchisimo saber a quien corresponde el archivo que esta siendo testeado.**
+
+## Requisitos*
 
 Asegúrate de tener instalados los siguientes elementos antes de comenzar:
 
-- [Node.js](https://nodejs.org/) (para Jest)
-- [Python](https://www.python.org/) (para el script de automatización)
+- Node.js
+- Python
 
 ## Configuración
 
