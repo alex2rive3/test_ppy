@@ -3,11 +3,10 @@
 Este proyecto está diseñado para ejecutar pruebas en múltiples archivos utilizando Jest para pruebas en JavaScript y un script en Python para la automatización del proceso.
 
 ## Indicaciones para el uso
-Para garantizar el correcto funcionamiento de los scripts, los alumnos deben completar los enunciados dentro de las funciones que se encuentran en el archivo _.template.js_. Es de suma importancia que todo lo que se encuentra escrito entre los símbolos __*""__ sea completado tal cual.
+Para el correcto funcionamiento del los scripts los alumnos deben completar los enunciados dentro de las funciones que se encuntran en el _.template.js_ de modo a que los test se puedan ejecutar correctamente, es muy importante tambien que se tenga muy presente que todo lo que se encuentra escrito entre los simbolos __*" "__ son obligatorios
 
-**Además, es esencial que los alumnos entreguen sus archivos con sus nombres para un seguimiento adecuado. De lo contrario, se dificultará identificar a quién pertenece el archivo que está siendo evaluado.**
+**Tambien es de suma importancia que los alumnos entreguen sus archivos con sus nombres para un correcto seguimiento, ya que de otro modo se va a dificultar muchisimo saber a quien corresponde el archivo que esta siendo testeado.**
 
-**La correcta ubicación de los archivos en las distintas carpetas también es crucial para que las pruebas de evaluación sean correctas.**
 ## Requisitos
 
 Asegúrate de tener instalados los siguientes elementos antes de comenzar:
@@ -32,7 +31,7 @@ npm install
 ## Ejecutar Test
 Para ejecutar el test se tiene que correr el comando 
 ```
-python3 run_tests.py
+python3 run_test.py
 ```
 esto desplegara una mensaje para seleccionar el test que se quiere correr, una vez seleccionado el test se ejecutara y se mostrara el resultado en la consola.
 ```

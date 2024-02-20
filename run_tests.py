@@ -5,9 +5,12 @@ import subprocess
 def ejecutar_pruebas(archivo_de_prueba, carpeta_alumnos):
     # Obtener la lista de archivos en la carpeta de alumnos
     archivos_alumnos = os.listdir(carpeta_alumnos)
+    RESET = "\033[0m"
+    BLUE = "\033[34m"
+
     # Iterar sobre cada archivo de alumno y ejecutar las pruebas
     for i, archivo_alumno in enumerate(archivos_alumnos):
-        print(f"Ejecutando pruebas para: {archivo_alumno}")
+        print(f"{BLUE}Ejecutando pruebas para: {archivo_alumno}{RESET}")
 
         # Construir la ruta completa del archivo del alumno
         ruta_completa_alumno = os.path.join(carpeta_alumnos, archivo_alumno)
@@ -49,13 +52,15 @@ def ejecutar_pruebas(archivo_de_prueba, carpeta_alumnos):
     contenido_test = contenido_test.replace(import_statement, "require('');")
     with open(archivo_de_prueba, 'w') as f:
         f.write(contenido_test)
+GREEN = "\033[32m"
+RESET = "\033[0m"
 
 # Solicitar al usuario la opción de pruebas a ejecutar
-opcion = input("Selecciona las pruebas que deseas ejecutar:\n"
-               "1. Pruebas de vectores y bucles\n"
-               "2. Pruebas del ejercitario\n"
-               "3. Pruebas de decisiones\n"
-               "Ingresa el número correspondiente a tu elección (1, 2 o 3): ")
+opcion = input(f"{GREEN}Selecciona las pruebas que deseas ejecutar:\n"
+               f"1. Pruebas de vectores y bucles\n"
+               f"2. Pruebas del ejercitario\n"
+               f"3. Pruebas de decisiones\n"
+               f"Ingresa el número correspondiente a tu elección (1, 2 o 3): {RESET}")
 
 if opcion == "1":
     print("Ejecutando pruebas de vectores y bucles...")
