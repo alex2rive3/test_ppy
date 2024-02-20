@@ -31,7 +31,7 @@ npm install
 ## Ejecutar Test
 Para ejecutar el test se tiene que correr el comando 
 ```
-python3 run_test.py
+python3 run_tests.py
 ```
 esto desplegara una mensaje para seleccionar el test que se quiere correr, una vez seleccionado el test se ejecutara y se mostrara el resultado en la consola.
 ```
