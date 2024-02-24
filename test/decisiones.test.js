@@ -1,4 +1,4 @@
-const {cualEsMayor} = require('');
+const {cualEsMayor} = require('../decisiones/ejercitario');
 describe('El mayor de tres numeros', () => {
     test('El mayor de 3, 5 y 7 es 7', () => {
         expect(cualEsMayor(3, 5, 7)).toBe(7);

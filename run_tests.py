@@ -46,12 +46,27 @@ def ejecutar_pruebas(archivo_de_prueba, carpeta_alumnos):
 
         # Ejecutar las pruebas con Jest
         comando = f"npm test {archivo_de_prueba} --testPathPattern={ruta_completa_alumno}"
-        subprocess.run(comando, shell=True)
+        shell = subprocess.run(comando, shell=True, capture_output=True)
+        salida_error = shell.stderr.decode('utf-8')
+
+        # Crear el nombre del archivo de salida
+        archivo_salida_nombre = f"{carpeta_alumnos}_salida.txt"
+
+        # Abrir el archivo de salida en modo de escritura
+        with open(archivo_salida_nombre, 'a') as archivo_salida:
+            match = re.search(r'Test Suites:.*Time:.*', salida_error, re.DOTALL)
+            if match:
+                resumen_pruebas = match.group(0)
+                # Escribir en el archivo de salida
+                archivo_salida.write(f"{archivo_alumno}\n{resumen_pruebas}\n")
+                # Imprimir en la consola
+                #print(archivo_alumno, resumen_pruebas)
 
     # Restaurar el contenido original del archivo de prueba al final
     contenido_test = contenido_test.replace(import_statement, "require('');")
     with open(archivo_de_prueba, 'w') as f:
         f.write(contenido_test)
+
 GREEN = "\033[32m"
 RESET = "\033[0m"
 

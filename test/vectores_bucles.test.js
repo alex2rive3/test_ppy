@@ -1,4 +1,4 @@
-const {enumerarCadaTercerElemento}=require('');
+const {enumerarCadaTercerElemento}=require('../vectores_bucles/ejercitario');
 describe('Vectores y bucles: Imprimir cada tercer elemento de un array', () => {
     test('Imprimir cada tercer elemento de un array', () => {
         const consoleSpy = jest.spyOn(console, 'log');
