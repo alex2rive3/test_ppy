@@ -20,7 +20,7 @@ const {
         stringsMayusculas,
         sumaAcumulativa,
         imprimirFor,
-        imprimirWhile,
+        imprimirWhile, 
         imprimirArray,
         sumaAcumulada,
         sumaWhile
